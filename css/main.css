@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600&subset=cyrillic');
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-header {
+  background-color: #eeeeee;
+  padding-top: 49px;
+}
+
+.main-nav {
+  margin-bottom: 15px;
+}
+
+.main-nav a {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.main-nav a:hover {
+  color: #fb565a;
+}
+
+.main-nav a:active {
+  color: #a6a6a6;
+}
+
+.main-nav .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: #fb565a;
+}
+
+.main-nav a:not(:first-child) {
+  margin-top: 34px;
+}
+
+.main-nav a:last-child,
+.main-nav a:nth-last-child(2) {
+  margin-right: 0;
+}
+
+.main-nav a:last-child {
+  padding-left: 41px;
+}
+
+.main-nav a:last-child::before {
+  content: "";
+  background: url("../img/sprites.png");
+  background-position: -600px -100px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.owl-item__description,
+.owl-item__image {
+  padding: 0;
+  color: #000;
+}
+
+.owl-item__description {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  max-width: 44%;
+}
+
+.description__tagline {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.description__paragraph {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.description__learn-more {
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 18px 55px;
+  background-color: #fb565a;
+  border-radius: 5px;
+}
+
+.owl-item__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.owl-dot {
+  position: absolute;
+  margin: 5px 15px;
+  bottom: 75px;
+}
+
+.owl-dot:first-child {
+  margin-left: -43px;
+}
+
+.owl-dot:nth-child(2) {
+  margin-left: -14px;
+}
+
+.owl-dot:last-child {
+  margin-right: -25px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #c2c2c2;
+  border-radius: 5px;
+}
