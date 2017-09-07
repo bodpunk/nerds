@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,600&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic');
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1160px;
+  }
+}
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
+  color: #000;
 }
 
 img {
@@ -14,6 +21,14 @@ img {
   padding-top: 49px;
 }
 
+.main-logo__img:hover {
+  opacity: 0.8;
+}
+
+.main-logo__img:active {
+  opacity: 0.3;
+}
+
 .main-nav {
   margin-bottom: 15px;
 }
@@ -24,7 +39,7 @@ img {
   position: relative;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #101010;
   text-decoration: none;
   margin-right: 50px;
@@ -80,31 +95,49 @@ img {
 
 .owl-item__description {
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   max-width: 44%;
 }
 
 .description__tagline {
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
 }
 
 .description__paragraph {
   font-size: 16px;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .description__learn-more {
-  margin-top: 45px;
+  display: inline-block;
+  vertical-align: top;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   padding: 18px 55px;
   background-color: #fb565a;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.description__learn-more:hover {
+  background-color: #e74246;
+  text-decoration: none;
+  color: #fff;
+}
+
+.description__learn-more:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.description__learn-more:active {
+  background-color: #d7373b;
+  color: #dd5357;
+  box-shadow: inset 0 3px 3px -3px #000;
 }
 
 .owl-item__image {
@@ -158,4 +191,250 @@ img {
   height: 7px;
   border: 2px solid #c2c2c2;
   border-radius: 5px;
+}
+
+.our-offer .row {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.our-offer .col-sm-4 {
+  padding: 80px 0 0;
+  margin-bottom: 80px;
+}
+
+.our-offer .col-sm-4::before {
+  content: "";
+  display: block;
+  background: url('../img/sprites.png') no-repeat;
+  width: 300px;
+  height: 146px;
+}
+
+.our-offer .our-offer__web-sites::before {
+  background-position: 0 -150px;
+}
+
+.our-offer .our-offer__presentations::before {
+  background-position: 0 -300px;
+}
+
+.our-offer h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.our-offer p {
+  font-size: 16px;
+  max-width: 245px;
+}
+
+.our-offer__order {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  background-color: #fb565a;
+  padding: 18px 39px;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+.our-offer__web-sites .our-offer__order:hover {
+  background-color: #e74246;
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__web-sites .our-offer__order:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__web-sites .our-offer__order:active {
+  background-color: #d7373b;
+  color: #e37376;
+  box-shadow: inset 0 3px 3px -3px #000;
+}
+
+.our-offer__applications .our-offer__order {
+  background-color: #00ca74;
+}
+
+.our-offer__applications .our-offer__order:hover {
+  background-color: #00bc6c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__applications .our-offer__order:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__applications .our-offer__order:active {
+  background-color: #00aa62;
+  color: #4dc491;
+  box-shadow: inset 0 3px 3px -3px #000;
+}
+
+.our-offer__presentations .our-offer__order {
+  background-color: #efc84a;
+}
+
+.our-offer__presentations .our-offer__order:hover {
+  background-color: #eab534;
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__presentations .our-offer__order:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-offer__presentations .our-offer__order:active {
+  background-color: #e5a722;
+  color: #ecbe5c;
+  box-shadow: inset 0 3px 3px -3px #000;
+}
+
+.about-us .row:not(.statistics__facts) {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.about-us__text,
+.about-us__statistics {
+  padding: 0;
+  padding: 40px 0 76px;
+}
+
+.about-us__breefing {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 40px 0 35px;
+}
+
+.about-us__our-princips {
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.what-we-do__breefing {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.what-we-do__list {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.what-we-do__list-item {
+  margin-bottom: 30px;
+}
+
+.what-we-do__list-item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  margin-right: 10px;
+}
+
+.about-us__logo {
+  margin-bottom: 40px;
+}
+
+.statistics__breefing {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.facts__number {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.number__percent {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.facts__text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 79px;
+}
+
+.portfolio__item {
+  padding: 40px 45px;
+  position: relative;
+}
+
+.portfolio__htmlacademy {
+  padding-left: 30px;
+}
+
+.portfolio__mishka {
+  padding-right: 30px;
+}
+
+.portfolio__image {
+  opacity: 0.2;
+}
+
+.portfolio__image:hover {
+  opacity: 1;
+}
+
+.portfolio__image:active {
+  opacity: 0.1;
+}
+
+.portfolio__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  right: -1px;
+  top: 50%;
+  margin-top: -30px;
+  opacity: 1;
 }
