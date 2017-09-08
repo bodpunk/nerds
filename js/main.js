@@ -8,3 +8,15 @@ $(document).ready(function(){
     autoplay: true
   });
 });
+
+$(function () {
+  $(".write-to-us__button").click(function() {
+    $(".write-to-us__form").addClass("visible");
+  })
+});
+
+$(function () {
+  $(".form__close").click(function() {
+    $(".write-to-us__form").removeClass("visible");
+  })
+});
