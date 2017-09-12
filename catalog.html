@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nerds</title>
+  <title>Магазин</title>
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -14,16 +14,18 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <nav class="main-nav row text-center">
-        <a class="main-nav__logo main-logo__link pull-left" href="index.html"><img class="main-logo__img" src="img/logo.png" width="160" height="65" /> </a>
-        <a class="main-nav__studio" href="#">Студия</a>
-        <a class="main-nav__clients" href="#">Клиенты</a>
-        <a class="main-nav__shop active">Магазин</a>
-        <a class="main-nav__contacts" href="#">Контакты</a>
-        <a class="main-nav__cart pull-right" href="#">Корзина</a>
+      <nav class="main-nav row">
+        <a class="main-nav__logo main-logo__link col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-0" href="index.html"><img class="main-logo__img" src="img/logo.png" width="160" height="65" alt="Nёrds"> </a>
+        <div class="main-nav__links col-sm-12 col-md-8 col-md-offset-2">
+          <a class="main-nav__studio" href="#">Студия</a>
+          <a class="main-nav__clients" href="#">Клиенты</a>
+          <a class="main-nav__shop active">Магазин</a>
+          <a class="main-nav__contacts" href="#">Контакты</a>
+          <a class="main-nav__cart pull-right" href="#">Корзина</a>
+        </div>
       </nav>
       <div class="main-header__title row text-center">
-        <h1 class="title__text">Магазин готовых шаблонов</h1>
+        <h1 class="main-header__text">Магазин готовых шаблонов</h1>
       </div>
     </div>
   </header>
@@ -31,13 +33,13 @@
     <div class="templates">
       <div class="container">
         <div class="row">
-          <form class="templates__filter col-sm-3" method="get">
+          <form class="templates__filter col-sm-4 col-md-3" method="get">
             <div class="filter__price">
               <span class="price__caption">Стоимость:</span>
               <div class="price__range">
-                <div class="price__range-line">
-                  <div class="price__range-line--from"></div>
-                  <div class="price__range-line--to"></div>
+                <div class="range__line">
+                  <div class="range__line--from"></div>
+                  <div class="range__line--to"></div>
                 </div>
               </div>
               <div class="price__number">
@@ -62,57 +64,87 @@
             </div>
             <div class="filter__features">
               <span class="features__caption">Особенности:</span>
-              <input type="checkbox" id="features__input--slider" class="features__input features__input--slider" name="features__input" checked>
+              <input type="checkbox" id="features__input--slider" class="features__input features__input--slider" name="features__input--slider" checked>
               <label for="features__input--slider">Слайдер</label>
-              <input type="checkbox" id="features__input--advantage" class="features__input features__input--advantage" name="features__input">
+              <input type="checkbox" id="features__input--advantage" class="features__input features__input--advantage" name="features__input--advantage">
               <label for="features__input--advantage">Блок преимуществ</label>
-              <input type="checkbox" id="features__input--news" class="features__input features__input--news" name="features__input" checked>
+              <input type="checkbox" id="features__input--news" class="features__input features__input--news" name="features__input--news" checked>
               <label for="features__input--news">Новости</label>
-              <input type="checkbox" id="features__input--gallery" class="features__input features__input--gallery" name="features__input">
+              <input type="checkbox" id="features__input--gallery" class="features__input features__input--gallery" name="features__input--gallery">
               <label for="features__input--gallery">Галерея</label>
-              <input type="checkbox" id="features__input--cart" class="features__input features__input--cart" name="features__input">
+              <input type="checkbox" id="features__input--cart" class="features__input features__input--cart" name="features__input--cart">
               <label for="features__input--cart">Корзина</label>
             </div>
             <button class="filter__button text-center">Показать</button>
           </form>
-          <div class="templates__items col-sm-8 col-sm-offset-1">
+          <div class="templates__items col-sm-8 col-md-offset-1">
             <div class="items__sort-by row">
-              <span class="sort-by__text col-sm-6">Сортировать:</span>
+              <span class="sort-by__caption col-sm-6">Сортировать:</span>
               <div class="sort-by__links col-sm-6">
                 <a href="#" class="sort-by__links--price active">По цене</a>
                 <a href="#" class="sort-by__links--kind">По типу</a>
-                <a href="#" class="sort-by__links--name">По имени</a>
-              </div>
-              <div class="sort__by-up-down">
-                <a href="#" class="sort-by__up-down--down active"></a>
-                <a href="#" class="sort-by__up-down--up"></a>
+                <a href="#" class="sort-by__links--name">По названию</a>
+                <div class="sort-by__up-down pull-right text-right">
+                  <a href="#" class="sort-by__up-down--down active"></a>
+                  <a href="#" class="sort-by__up-down--up"></a>
+                </div>
               </div>
             </div>
             <div class="items__container row">
               <article class="templates__sedona col-sm-6">
                 <img class="sedona__image" src="img/templates__sedona.jpg" alt="Sedona">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">Sedona</h1>
+                  <p class="about-template__text">Информационный сайт для туристов</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
               <article class="templates__pink col-sm-6">
                 <img class="pink__image" src="img/templates__pink.jpg" alt="Pink">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">Pink App</h1>
+                  <p class="about-template__text">Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
               <article class="templates__borodinski col-sm-6">
                 <img class="borodinski__image" src="img/templates__borodinski.jpg" alt="Borodinski">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">Barbershop</h1>
+                  <p class="about-template__text">Сайт салона красоты. Для мужчин, да.</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
               <article class="templates__mishka col-sm-6">
                 <img class="mishka__image" src="img/templates__mishka.jpg" alt="Mishka">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">Mishka</h1>
+                  <p class="about-template__text">Интернет-магазин вязаных игрушек</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
               <article class="templates__aplus col-sm-6">
                 <img class="aplus__image" src="img/templates__aplus.jpg" alt="APlus">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">A Plus</h1>
+                  <p class="about-template__text">Лендинг курсов повышения квалификации</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
               <article class="templates__kvast col-sm-6">
                 <img class="kvast__image" src="img/templates__kvast.jpg" alt="Kvast">
+                <div class="templates__about-template templates__about-template--sedona text-center">
+                  <h1 class="about-template__title">КВАСТ</h1>
+                  <p class="about-template__text">Промо-сайт производителя крафтового кваса</p>
+                  <button class="about-template__price">9 900 руб.</button>
+                </div>
               </article>
             </div>
-            <nav class="templates-nav">
-              <a href="#" class="templates-nav__first">1</a>
-              <a href="#" class="templates-nav__second">2</a>
-              <a href="#" class="templates-nav__third">3</a>
-              <a href="#" class="templates-nav__next">Следующая</a>
+            <nav class="templates__nav">
+              <a class="nav__first-sheet active">1</a>
+              <a href="#" class="nav__second-sheet">2</a>
+              <a href="#" class="nav__third-sheet">3</a>
+              <a href="#" class="nav__next-sheet">Следующая</a>
             </nav>
           </div>
         </div>
@@ -125,26 +157,26 @@
       <div class="container">
         <div class="main-footer__write-to-us">
           <div class="write-to-us__on-map-block">
-            <h2 class="write-to-us__title">NЁRDS DESIGN STUDIO</h2>
-            <p class="write-to-us__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-            <p class="write-to-us__phone">тел. +7 (812) 275-75-75</p>
-            <button class="write-to-us__button">Напишите нам</button>
+            <h2 class="on-map-block__title">NЁRDS DESIGN STUDIO</h2>
+            <p class="on-map-block__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="on-map-block__phone">тел. +7 (812) 275-75-75</p>
+            <button class="on-map-block__button">Напишите нам</button>
           </div>
           <div class="row">
             <form class="write-to-us__form col-sm-10 col-sm-offset-1" method="get">
               <div class="form__close"></div>
-              <b class="form__briefing">Напишите нам</b>
+              <b class="form__caption">Напишите нам</b>
               <div class="form__name">
                 <label for="name__input">Ваше имя:</label>
-                <input id="name__input" class="name__input" type="text" placeholder="Представьтесь, пожалуйста" name="name__input">
+                <input id="name__input" class="name__input" type="text" placeholder="Представьтесь, пожалуйста" name="name__input" required>
               </div>
               <div class="form__email pull-right">
                 <label for="email__input">Ваш e-mail:</label>
-                <input id="email__input" class="email__input" type="text" placeholder="Для отправки ответа" name="email__input">
+                <input id="email__input" class="email__input" type="email" placeholder="Для отправки ответа" name="email__input">
               </div>
               <div class="form__letter-text">
                 <label for="letter-text__textarea">Текст письма:</label>
-                <textarea id="letter-text__textarea" class="letter-text__textarea" rows="6" placeholder="В свободной форме" name="letter-text__textarea"></textarea>
+                <textarea id="letter-text__textarea" class="letter-text__textarea" rows="6" placeholder="В свободной форме" name="letter-text__textarea" required></textarea>
               </div>
               <button class="form__button">Отправить</button>
             </form>
@@ -160,8 +192,8 @@
             <a href="#" class="links__fb"></a>
             <a href="#" class="links__ig"></a>
           </div>
-          <div class="social__text col-sm-6 col-sm-offset-1">
-            <strong class="social__briefing">Давайте дружить, это выгодно!</strong>
+          <div class="social__text col-sm-9 col-md-8 col-md-offset-1">
+            <strong class="social__caption">Давайте дружить, это выгодно!</strong>
             <p class="social__sales">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>

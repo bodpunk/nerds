@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 $(function () {
-  $(".write-to-us__button").click(function() {
+  $(".on-map-block__button").click(function() {
     $(".write-to-us__form").addClass("visible");
   })
 });

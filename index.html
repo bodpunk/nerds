@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nerds</title>
+  <title>Nёrds</title>
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -14,24 +14,26 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <nav class="main-nav row text-center">
-        <a class="main-nav__logo main-logo__link pull-left" href="#"><img class="main-logo__img" src="img/logo.png" width="160" height="65" /> </a>
-        <a class="main-nav__studio" href="#">Студия</a>
-        <a class="main-nav__clients" href="#">Клиенты</a>
-        <a class="main-nav__shop" href="catalog.html">Магазин</a>
-        <a class="main-nav__contacts" href="#">Контакты</a>
-        <a class="main-nav__cart pull-right" href="#">Корзина</a>
+      <nav class="main-nav row">
+        <a class="main-nav__logo main-logo__link col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-0 active" href="#"><img class="main-logo__img" src="img/logo.png" width="160" height="65" alt="Nёrds"></a>
+        <div class="main-nav__links col-sm-12 col-md-8 col-md-offset-2">
+          <a class="main-nav__studio" href="#">Студия</a>
+          <a class="main-nav__clients" href="#">Клиенты</a>
+          <a class="main-nav__shop" href="catalog.html">Магазин</a>
+          <a class="main-nav__contacts" href="#">Контакты</a>
+          <a class="main-nav__cart pull-right" href="#">Корзина</a>
+        </div>
       </nav>
-      <div class="carousel row">
+      <div class="carousel">
         <div class="owl-carousel owl-theme">
           <div class="carousel__item">
             <div class="owl-item__description pull-left">
               <span class="description__tagline">Долго, дорого, скрупулезно.</span>
-              <p class="description__paragraph">Математически выверенный дизайн<br />для вашего сайта или мобильного приложения.</p>
+              <p class="description__paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
               <a class="description__learn-more" href="#">Узнать больше</a>
             </div>
             <div class="owl-item__image pull-right">
-              <img src="img/carousel__slide-1.png" />
+              <img src="img/carousel__slide-1.png" width="698" height="413" alt="phone">
             </div>
           </div>
           <div class="carousel__item">
@@ -41,7 +43,7 @@
               <a class="description__learn-more" href="#">Узнать больше</a>
             </div>
             <div class="owl-item__image pull-right">
-              <img src="img/carousel__slide-2.png" />
+              <img src="img/carousel__slide-2.png" width="663" height="430" alt="all-in-one">
             </div>
           </div>
           <div class="carousel__item">
@@ -51,7 +53,7 @@
               <a class="description__learn-more" href="#">Узнать больше</a>
             </div>
             <div class="owl-item__image pull-right">
-              <img src="img/carousel__slide-3.png" />
+              <img src="img/carousel__slide-3.png" width="759" height="411" alt="tablet">
             </div>
           </div>
         </div>
@@ -84,10 +86,10 @@
       <div class="container">
         <div class="row">
           <div class="about-us__text col-sm-7">
-            <strong class="about-us__briefing">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong>
+            <strong class="about-us__caption">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong>
             <p class="about-us__our-princips">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
             <div class="about-us__what-we-do">
-              <b class="what-we-do__briefing">Выполняем заказы на разработку:</b>
+              <b class="what-we-do__caption">Выполняем заказы на разработку:</b>
               <ul class="what-we-do__list">
                 <li class="what-we-do__list-item">Веб-сайтов любой сложности</li>
                 <li class="what-we-do__list-item">Мобильных приложений для iOS и Android</li>
@@ -95,10 +97,10 @@
               </ul>
             </div>
           </div>
-          <div class="about-us__statistics col-sm-4 col-sm-offset-1 text-center">
+          <div class="about-us__statistics col-md-4 col-md-offset-1 col-sm-5 text-center">
             <img class="statistics__logo" src="img/about-us__logo.jpg" alt="" width="360" height="208">
-            <b class="statistics__briefing">С 2004 года любим точность во всем:</b>
-            <div class="statistics__facts row text-left">
+            <b class="statistics__caption">С 2004 года любим точность во всем:</b>
+            <div class="statistics__facts text-left">
               <div class="facts__surrender col-sm-4">
                 <span class="facts__number">146<span class="number__percent">%</span></span>
                 <p class="facts__text">Уровень самоотдачи</p>
@@ -119,10 +121,11 @@
     <div class="portfolio">
       <div class="container">
         <div class="row flex-row text-center">
-          <a href="#" class="portfolio__item portfolio__htmlacademy col-sm-3"><img class="portfolio__image" src="img/portfolio__htmlacademy.png" alt="htmlacademy" width="209" height="90"></a>
-          <a href="#" class="portfolio__item portfolio__borodinski col-sm-3"><img class="portfolio__image" src="img/portfolio__borodinski.png" alt="borodinski" width="199" height="68"></a>
-          <a href="#" class="portfolio__item portfolio__pink col-sm-3"><img class="portfolio__image" src="img/portfolio__pink.png" alt="pink" width="185" height="52"></a>
-          <a href="#" class="portfolio__item portfolio__mishka col-sm-3"><img class="portfolio__image" src="img/portfolio__mishka.png" alt="mishka" width="173" height="84"></a>
+          <a href="#" class="portfolio__item portfolio__htmlacademy col-md-3 col-sm-6"><img class="portfolio__image" src="img/portfolio__htmlacademy.png" alt="htmlacademy" width="209" height="90"></a>
+          <a href="#" class="portfolio__item portfolio__borodinski col-md-3 col-sm-6"><img class="portfolio__image" src="img/portfolio__borodinski.png" alt="borodinski" width="199" height="68"></a>
+          <div class="clearfix visible-sm-block"></div>
+          <a href="#" class="portfolio__item portfolio__pink col-md-3 col-sm-6"><img class="portfolio__image" src="img/portfolio__pink.png" alt="pink" width="185" height="52"></a>
+          <a href="#" class="portfolio__item portfolio__mishka col-sm-6 col-md-3"><img class="portfolio__image" src="img/portfolio__mishka.png" alt="mishka" width="173" height="84"></a>
         </div>
       </div>
     </div>
@@ -131,28 +134,28 @@
     <div class="main-footer__map">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae9396359eb96f3c6ecba0969ec1e045a774b25c2262288f9296c196649b5ad90&amp;width=100%25&amp;height=417&amp;lang=ru_RU&amp;scroll=false"></script>
       <div class="container">
-        <div class="main-footer__write-to-us">
+        <div class="main-footer__write-to-us row">
           <div class="write-to-us__on-map-block">
-            <h2 class="write-to-us__title">NЁRDS DESIGN STUDIO</h2>
-            <p class="write-to-us__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-            <p class="write-to-us__phone">тел. +7 (812) 275-75-75</p>
-            <button class="write-to-us__button">Напишите нам</button>
+            <h2 class="on-map-block__title">NЁRDS DESIGN STUDIO</h2>
+            <p class="on-map-block__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="on-map-block__phone">тел. +7 (812) 275-75-75</p>
+            <button class="on-map-block__button">Напишите нам</button>
           </div>
           <div class="row">
             <form class="write-to-us__form col-sm-10 col-sm-offset-1" method="get">
               <div class="form__close"></div>
-              <b class="form__briefing">Напишите нам</b>
+              <b class="form__caption">Напишите нам</b>
               <div class="form__name">
                 <label for="name__input">Ваше имя:</label>
-                <input id="name__input" class="name__input" type="text" placeholder="Представьтесь, пожалуйста" name="name__input">
+                <input id="name__input" class="name__input" type="text" placeholder="Представьтесь, пожалуйста" name="name__input" pattern="[A-Za-zА-Яа-яЁё]{2,}" required>
               </div>
               <div class="form__email pull-right">
                 <label for="email__input">Ваш e-mail:</label>
-                <input id="email__input" class="email__input" type="text" placeholder="Для отправки ответа" name="email__input">
+                <input id="email__input" class="email__input" type="email" placeholder="Для отправки ответа" name="email__input">
               </div>
               <div class="form__letter-text">
                 <label for="letter-text__textarea">Текст письма:</label>
-                <textarea id="letter-text__textarea" class="letter-text__textarea" rows="6" placeholder="В свободной форме" name="letter-text__textarea"></textarea>
+                <textarea id="letter-text__textarea" class="letter-text__textarea" rows="6" placeholder="В свободной форме" name="letter-text__textarea" required></textarea>
               </div>
               <button class="form__button">Отправить</button>
             </form>
@@ -168,8 +171,8 @@
             <a href="#" class="links__fb"></a>
             <a href="#" class="links__ig"></a>
           </div>
-          <div class="social__text col-sm-6 col-sm-offset-1">
-            <strong class="social__briefing">Давайте дружить, это выгодно!</strong>
+          <div class="social__text col-sm-9 col-md-8 col-md-offset-1">
+            <strong class="social__caption">Давайте дружить, это выгодно!</strong>
             <p class="social__sales">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
