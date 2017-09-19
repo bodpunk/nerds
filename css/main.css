@@ -925,6 +925,10 @@ article:hover .templates__about-template {
   position: relative;
 }
 
+.map__yandex {
+  height: 417px;
+}
+
 .write-to-us__on-map-block {
   padding: 55px 50px 48px;
   position: absolute;
@@ -1378,9 +1382,6 @@ article:hover .templates__about-template {
     bottom: 0;
     left: 0;
     text-align: center;
-  }
-  .main-footer__map > ymaps {
-    height: 515px!important;
   }
   .main-footer__social {
     text-align: center;

@@ -66,3 +66,36 @@ $(function() {
     }
   });
 });
+
+// Подключаем карту
+ymaps.ready(function () {
+var myMap = new ymaps.Map('map', {
+    center: [59.93915054846753,30.321560552441337],
+    zoom: 17
+  }, {
+    searchControlProvider: 'yandex#search'
+  }),
+// Создаём макет содержимого.
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+  '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemark = new ymaps.Placemark([59.938725259417716,30.323126962506038], {
+    hintContent: 'Nёrds',
+    balloonContent: 'Санкт-Петербург, ул. Б. Конюшенная, д. 19/8'
+  }, {
+    // Опции.
+    // Необходимо указать данный тип макета.
+    iconLayout: 'default#image',
+    // Своё изображение иконки метки.
+    iconImageHref: 'img/map-marker.png',
+    // Размеры метки.
+    iconImageSize: [231, 190],
+    // Смещение левого верхнего угла иконки относительно
+    // её "ножки" (точки привязки).
+    iconImageOffset: [-45, -200]
+  });
+  myMap.geoObjects.add(myPlacemark)
+  //отключаем зум колёсиком мышки
+  myMap.behaviors.disable('scrollZoom');
+});
