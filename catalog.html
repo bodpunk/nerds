@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -53,25 +54,25 @@
             </div>
             <div class="filter__grid">
               <span class="grid__caption">Сетка:</span>
-              <input id="grid__input--adaptive" class="grid__input grid__input--adaptive" type="radio" name="grid__input" checked>
-              <label for="grid__input--adaptive"><div class="radio-button"></div>Адаптивная</label>
-              <input id="grid__input--fixed" class="grid__input grid__input--fixed" type="radio" name="grid__input">
-              <label for="grid__input--fixed"><div class="radio-button"></div>Фиксированная</label>
-              <input id="grid__input--fluid" class="grid__input grid__input--fluid" type="radio" name="grid__input">
-              <label for="grid__input--fluid"><div class="radio-button"></div>Резиновая</label>
+              <input id="grid__input--adaptive" class="grid__input grid__input--adaptive" type="radio" name="grid__input" value="adaptive" checked>
+              <label for="grid__input--adaptive" tabindex="0"><span class="radio-button"></span>Адаптивная</label>
+              <input id="grid__input--fixed" class="grid__input grid__input--fixed" type="radio" name="grid__input" value="fixed">
+              <label for="grid__input--fixed" tabindex="0"><span class="radio-button"></span>Фиксированная</label>
+              <input id="grid__input--fluid" class="grid__input grid__input--fluid" type="radio" name="grid__input" value="fluid">
+              <label for="grid__input--fluid" tabindex="0"><span class="radio-button"></span>Резиновая</label>
             </div>
             <div class="filter__features">
               <span class="features__caption">Особенности:</span>
               <input type="checkbox" id="features__input--slider" class="features__input features__input--slider" name="features__input--slider" checked>
-              <label for="features__input--slider">Слайдер</label>
+              <label for="features__input--slider" tabindex="0">Слайдер</label>
               <input type="checkbox" id="features__input--advantage" class="features__input features__input--advantage" name="features__input--advantage">
-              <label for="features__input--advantage">Блок преимуществ</label>
+              <label for="features__input--advantage" tabindex="0">Блок преимуществ</label>
               <input type="checkbox" id="features__input--news" class="features__input features__input--news" name="features__input--news" checked>
-              <label for="features__input--news">Новости</label>
+              <label for="features__input--news" tabindex="0">Новости</label>
               <input type="checkbox" id="features__input--gallery" class="features__input features__input--gallery" name="features__input--gallery">
-              <label for="features__input--gallery">Галерея</label>
+              <label for="features__input--gallery" tabindex="0">Галерея</label>
               <input type="checkbox" id="features__input--cart" class="features__input features__input--cart" name="features__input--cart">
-              <label for="features__input--cart">Корзина</label>
+              <label for="features__input--cart" tabindex="0">Корзина</label>
             </div>
             <button class="filter__button text-center">Показать</button>
           </form>

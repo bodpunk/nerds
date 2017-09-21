@@ -99,3 +99,13 @@ var myMap = new ymaps.Map('map', {
   //отключаем зум колёсиком мышки
   myMap.behaviors.disable('scrollZoom');
 });
+
+// Включаем возможность работы с фильтром страницы "Магазин" без участия мыши(инпуты скрыты)
+$(function() {
+  $('.templates__filter label').keypress(function (e) {
+    if (e.which == 13 || e.which == 32) {
+      e.preventDefault();
+      this.click()
+    }
+  })
+});
